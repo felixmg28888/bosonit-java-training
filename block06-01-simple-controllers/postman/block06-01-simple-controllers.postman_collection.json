@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "9ba67338-5573-41e7-99d9-04d3eeb1a80c",
+		"name": "block06-01-simple-controllers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "GET Persona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/Persona1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"Persona1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Persona2\",\r\n    \"edad\": 20,\r\n    \"ciudad\": \"Ciudad Persona2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/useradd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"useradd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
