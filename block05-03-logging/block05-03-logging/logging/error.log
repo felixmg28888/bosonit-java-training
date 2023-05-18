@@ -1,0 +1,2 @@
+2023-04-03 16:41:28,313 ERROR [http-nio-8080-exec-1] c.b.f.b.MainController [MainController.java:20] Mensaje a nivel de ERROR
+2023-04-03 16:43:38,174 ERROR [http-nio-8080-exec-1] c.b.f.b.MainController [MainController.java:20] Mensaje a nivel de ERROR
