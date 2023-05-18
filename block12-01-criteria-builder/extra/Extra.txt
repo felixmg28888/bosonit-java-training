@@ -1,0 +1,122 @@
+//----------------------------CRITERIA BUILDER-----------------------------------------------------------
+    @PersistenceContext//Anotación específica para inyectar EntityManager (Autowired)
+    private EntityManager entityManager;//Interfaz con métodos para realizar operaciones CRUD
+
+    @Override
+    public List<PersonaOutputDto> getPersonas(String usuario, String name, String surname, Date createdDate, String dateCondition, String orderBy) {
+
+        //-------------------------------ELEMENTOS NECESARIOS PARA LA CONSULTA--------------------------------------------------------------------
+
+        //CriteriaBuilder permite construir la consulta de manera dinámica.
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();// Construye cb con el método de la interfaz EntityManager.
+        //CriteriaBuilder se utiliza para construir objetos de consulta.
+
+        //CriteriaQuery representa la consulta completa y se utiliza para realizar la ejecución real de la consulta.
+        CriteriaQuery<Persona> query = cb.createQuery(Persona.class);//Especifica el tipo de consulta SELECT, UPDATE, DELETE
+        //La razón por la cual CriteriaQuery<Persona> necesita <Persona> es para especificar el tipo de
+        // entidad que se va a consultar. Esto es útil para que el compilador pueda comprobar si las
+        // consultas son válidas en tiempo de compilación y proporcionar una mejor verificación de tipos.
+        //En cuanto a cb.createQuery(Persona.class), esto se utiliza para crear una instancia de CriteriaQuery
+        // que tiene Persona como tipo de resultado. Esto es necesario para especificar qué entidad se está
+        // consultando y qué tipo de resultados se esperan de la consulta.
+        //¡¡¡Aunque se de lo anterior el root es necesario sí o sí.
+
+
+        //-----------Otros tipos de querys-------------------------------------------------------------------------
+        //CriteriaDelete<Persona> deleteQuery = cb.createCriteriaDelete(Persona.class);
+        //Root<Persona> root = deleteQuery.from(Persona.class);
+        //deleteQuery.where(cb.equal(root.get("name"), "Juan"));
+        //entityManager.createQuery(deleteQuery).executeUpdate();
+        //CriteriaUpdate<Persona> update = cb.createCriteriaUpdate(Persona.class);
+        //Root<Persona> root = update.from(Persona.class);
+        //update.set("name", "Nuevo nombre");
+        //update.set("surname", "Nuevo apellido");
+        //Condición para el update
+        //Predicate condition = cb.equal(root.get("id"), 1L);
+        //update.where(condition);
+        //entityManager.getTransaction().begin();
+        //entityManager.createQuery(update).executeUpdate();
+        //entityManager.getTransaction().commit();
+        //-----------Otros tipos de querys-------------------------------------------------------------------------
+
+
+        Root<Persona> root = query.from(Persona.class);//Root representa la entidad que será consultada.
+        //Creará un objeto root de la clase persona. Se utiliza para acceder a los atributos de la entidad Persona.
+
+        //Predicados son las condiciones... WHERE ......
+        List<Predicate> predicates = new ArrayList<>();//Aquí interviene el HashMap
+
+        //---------------Una vez creados los objetos/elementos necesarios para la consulta----------------------------------------------------------------------------------
+
+        //-----Se realiza la ejecución...en este caso se hace más adelante pues hay que controlar el hashmap-----------
+        //query.select(root).where(predicates.toArray(new Predicate[0]));
+        //List<Persona> personas = entityManager.createQuery(query).getResultList();
+
+
+        //------------------------------------------------------------------------------------------------------------
+        List<Predicate> predicados = new ArrayList<>();
+        Predicate predicado;
+
+        // Agregamos los predicados según los parámetros de búsqueda
+        if (usuario != null) {
+            //predicado= cb.like(root.get("usuario"), "%" + usuario + "%");
+            predicado= cb.equal(root.get("usuario"), usuario);
+            predicados.add(predicado);
+        }
+        if (name != null) {
+            predicado = cb.equal(root.get("name"), name);
+            predicados.add(predicado);
+        }
+        if (surname != null) {
+            predicado = cb.equal(root.get("surname"), surname);
+            predicados.add(predicado);
+        }
+        if (createdDate != null) {
+            if (dateCondition != null && dateCondition.equals("superior")) {
+                predicado = cb.greaterThanOrEqualTo(root.get("createdDate"), createdDate);
+                predicados.add(predicado);
+            } else if (dateCondition != null && dateCondition.equals("inferior")) {
+                predicado = cb.lessThanOrEqualTo(root.get("createdDate"), createdDate);
+                predicados.add(predicado);
+            } else {
+                predicado = cb.equal(root.get("createdDate"), createdDate);
+                predicados.add(predicado);
+            }
+        }
+
+
+        // Ordenamos el resultado si se especificó
+        Order order;
+        if (orderBy != null) {
+            order = cb.desc(root.get(orderBy));
+        } else {
+            // Si orderBy es nulo, establecer un campo de ordenamiento predeterminado
+            order = cb.asc(root.get("idPersona")); // por ejemplo
+        }
+
+
+
+        if (!predicados.isEmpty()) {
+            query.where(predicados.toArray(new Predicate[predicados.size()])).orderBy(order);
+        }
+
+
+
+        List<Persona> personas = entityManager.createQuery(query).getResultList();
+
+        List<PersonaOutputDto> personaOutputDtoList = new ArrayList<>();
+        personas.forEach(persona -> {
+            PersonaOutputDto personaOutputDto = new PersonaOutputDto(persona);
+            personaOutputDtoList.add(personaOutputDto);
+        });
+
+
+        return personaOutputDtoList;
+    }
+
+//----------------------------------------------------------------------------------------------------
+    //http://www.profesor-p.com/2019/02/14/querys-avanzadas-con-jpa-en-spring-boot/
+    //https://github.com/chuchip/CustomJpaQuery
+
+    //https://www.youtube.com/watch?v=U7AXDX-qMd0
+//----------------------------------------------------------------------------------------------------

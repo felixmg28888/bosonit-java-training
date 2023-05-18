@@ -1,0 +1,590 @@
+{
+	"info": {
+		"_postman_id": "f22bee6c-2420-49a4-b29e-c168d8528dc6",
+		"name": "block12-01-criteria-builder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "Get Criteria 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?usuario=Person_001&page=0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "Person_001"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "dateCondition",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?name=Person_006&page=0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Person_006"
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "dateCondition",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?surname=Person_006&page=0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "Person_006"
+						},
+						{
+							"key": "createdDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "dateCondition",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?createdDate=23-11-2018&dateCondition=inferior&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "23-11-2018"
+						},
+						{
+							"key": "dateCondition",
+							"value": "inferior"
+						},
+						{
+							"key": "orderBy",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?orderBy=usuario&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "23-11-2018",
+							"disabled": true
+						},
+						{
+							"key": "dateCondition",
+							"value": "superior",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "usuario"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?createdDate=23-11-2018&dateCondition=inferior&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "Ficticia1",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "23-11-2018"
+						},
+						{
+							"key": "dateCondition",
+							"value": "inferior"
+						},
+						{
+							"key": "orderBy",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?orderBy=name&page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "dateCondition",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "name"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?page=0&size=8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "dateCondition",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?createdDate=23-11-2018&dateCondition=inferior&orderBy=name&page=0&size=4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "surname",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "createdDate",
+							"value": "23-11-2018"
+						},
+						{
+							"key": "dateCondition",
+							"value": "inferior"
+						},
+						{
+							"key": "orderBy",
+							"value": "name"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criteria 10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona/get?createdDate=23-11-2018&orderBy=name&dateCondition=inferior&page=5&size=4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"get"
+					],
+					"query": [
+						{
+							"key": "createdDate",
+							"value": "23-11-2018"
+						},
+						{
+							"key": "orderBy",
+							"value": "name"
+						},
+						{
+							"key": "dateCondition",
+							"value": "inferior"
+						},
+						{
+							"key": "page",
+							"value": "5"
+						},
+						{
+							"key": "size",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/persona",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
