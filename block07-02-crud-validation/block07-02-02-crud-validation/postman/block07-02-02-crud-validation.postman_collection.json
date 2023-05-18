@@ -1,0 +1,472 @@
+{
+	"info": {
+		"_postman_id": "5bbc439e-63aa-4861-aa1c-8d8d7b0f7edf",
+		"name": "block07-02-02-crud-validation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "PERSONA",
+			"item": [
+				{
+					"name": "POST PERSONA",
+					"item": [
+						{
+							"name": "addPersona 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Persona1\",\r\n    \"password\": \"PassPersona1\",\r\n    \"name\": \"Persona1\",\r\n    \"surname\": \"Persona1 Persona1\",\r\n    \"companyEmail\": \"Persona1@example.com\",\r\n    \"personalEmail\": \"Persona1@gmail.com\",\r\n    \"city\": \"Ciudad Persona1\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Persona1.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Persona2\",\r\n    \"password\": \"PassPersona2\",\r\n    \"name\": \"Persona2\",\r\n    \"surname\": \"Persona2 Persona2\",\r\n    \"companyEmail\": \"Persona2@example.com\",\r\n    \"personalEmail\": \"Persona2@gmail.com\",\r\n    \"city\": \"Ciudad Persona2\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Persona2.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Persona3\",\r\n    \"password\": \"PassPersona3\",\r\n    \"name\": \"Persona3\",\r\n    \"surname\": \"Persona3 Persona3\",\r\n    \"companyEmail\": \"Persona3@example.com\",\r\n    \"personalEmail\": \"Persona3@gmail.com\",\r\n    \"city\": \"Ciudad Persona3\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Persona3.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Persona4\",\r\n    \"password\": \"PassPersona4\",\r\n    \"name\": \"Persona4\",\r\n    \"surname\": \"Persona4 Persona4\",\r\n    \"companyEmail\": \"Persona4@example.com\",\r\n    \"personalEmail\": \"Persona4@gmail.com\",\r\n    \"city\": \"Ciudad Persona4\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Persona4.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 4 Error Input",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"PassPersona1\",\r\n    \"name\": \"Persona1\",\r\n    \"surname\": \"Persona1 Persona1\",\r\n    \"companyEmail\": \"Persona1@example.com\",\r\n    \"personalEmail\": \"Persona1@gmail.com\",\r\n    \"city\": \"Ciudad Persona1\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Persona1.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 4 Error Input Duplicado",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"PassPersona1\",\r\n    \"name\": \"Persona1\",\r\n    \"surname\": \"Persona1 Persona1\",\r\n    \"companyEmail\": \"Persona1@example.com\",\r\n    \"personalEmail\": \"Persona1@gmail.com\",\r\n    \"city\": \"Ciudad Persona1\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Persona1.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET PERSONA",
+					"item": [
+						{
+							"name": "getPersonaById 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/8080",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"8080"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaByName 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/nombre/Persona1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"nombre",
+										"Persona1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPsonaByName 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/nombre/Persona8080",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"nombre",
+										"Persona8080"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllPersonas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT PERSONA",
+					"item": [
+						{
+							"name": "updatePersona 1 Completo",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Cambio\",\r\n    \"name\": \"Cambio\",\r\n    \"surname\": \"Cambio\",\r\n    \"companyEmail\": \"Cambio@example.com\",\r\n    \"personalEmail\": \"Cambio@gmail.com\",\r\n    \"city\": \"Cambio\",\r\n    \"active\": true,\r\n    \"createdDate\": \"2023-01-19T11:08:16.864+00:00\",\r\n    \"imagenUrl\": \"http9s://example.com/images/Cambio.jpg\",\r\n    \"terminationDate\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePersona 1 Parcial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cambio parcial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePersona 4Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cambio4Error\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/8080",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"8080"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE PERSONA",
+					"item": [
+						{
+							"name": "deletePersona 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePersona 4Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/8080",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"8080"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
