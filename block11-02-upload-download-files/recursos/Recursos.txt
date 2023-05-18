@@ -1,0 +1,4 @@
+En este directorio se incluyen los distintos archivos .png, .jpg, .mp3 y .mp4 utilizados, ya
+que se corresponden con las peticiones adjuntadas en el directorio Postman.
+
+El contenido de este directorio es libre de derechos de autor, sin copyright.
