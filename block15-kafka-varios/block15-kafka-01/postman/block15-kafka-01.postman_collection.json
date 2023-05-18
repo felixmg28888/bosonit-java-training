@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "b1c62f9f-4c52-4ab9-ad3d-4077900b9308",
+		"name": "block15-kafka-01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "PRODUCER",
+			"item": [
+				{
+					"name": "1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "message",
+									"value": "Calentando horno",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "message",
+									"value": "Metiendo la pizza en el horno",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "message",
+									"value": "En su cajita",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "message",
+									"value": "A 5 km de tu domicilio",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "message",
+									"value": "En el ascensor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CONSUMER",
+			"item": [
+				{
+					"name": "Last",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BosonEat/last",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"last"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BosonEat/history",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"history"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

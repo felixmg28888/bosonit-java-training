@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "21b2eeae-9cd0-4147-85e1-0fc02734443b",
+		"name": "block15-kafka-03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "Pizzeria",
+			"item": [
+				{
+					"name": "1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pedido\": \"Pizza margarita\",\r\n  \"ingredientes\": \"Tomate, mozzarella, albahaca\",\r\n  \"estado\": \"Calentando horno\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/Pizzeria/PedidoUpdate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"Pizzeria",
+								"PedidoUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"Metiendo la pizza en el horno\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/Pizzeria/PedidoUpdate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"Pizzeria",
+								"PedidoUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"En su cajita\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/Pizzeria/PedidoUpdate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"Pizzeria",
+								"PedidoUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"A 5 km de su domicilio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/Pizzeria/PedidoUpdate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"Pizzeria",
+								"PedidoUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"En el ascensor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/Pizzeria/PedidoUpdate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"Pizzeria",
+								"PedidoUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comentario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"En el ascensor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/Pizzeria/Comentario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"Pizzeria",
+								"Comentario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Last",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BosonEat/Cliente/Estado",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"Cliente",
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Historial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BosonEat/Cliente/Historial",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"Cliente",
+								"Historial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DejaComentario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "La pizza estaba muy rica"
+						},
+						"url": {
+							"raw": "localhost:8081/BosonEat/Cliente/DejaComentario",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"Cliente",
+								"DejaComentario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

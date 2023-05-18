@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "e952f0ed-46d4-4329-af52-8becdc5255f2",
+		"name": "block15-kafka-02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "PRODUCER",
+			"item": [
+				{
+					"name": "1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pedido\": \"Pizza margarita\",\r\n  \"ingredientes\": \"Tomate, mozzarella, albahaca\",\r\n  \"estado\": \"Calentando horno\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"Metiendo la pizza en el horno\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"En su cajita\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"A 5 km de su domicilio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"estado\": \"En el ascensor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/BosonEat/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"BosonEat",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CONSUMER",
+			"item": [
+				{
+					"name": "Last",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BosonEat/last",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"last"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BosonEat/history",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BosonEat",
+								"history"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

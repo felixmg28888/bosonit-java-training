@@ -1,0 +1,18 @@
+------------------------------------------------------------------------------------------------------------------------------------
+LISTA TOPIC
+
+docker exec <Container-ID> kafka-topics.sh --list --bootstrap-server localhost:9092
+------------------------------------------------------------------------------------------------------------------------------------
+BORRA TOPIC
+
+docker exec <Container-ID> kafka-topics.sh --delete --topic <Topic> --bootstrap-server localhost:9092
+------------------------------------------------------------------------------------------------------------------------------------
+VER MENSAJES
+
+docker exec <Container-ID> kafka-console-consumer.sh --topic <Topic> --bootstrap-server localhost:9092 --from-beginning
+docker exec <Container-ID> kafka-console-consumer.sh --topic <Topic> --bootstrap-server localhost:9092
+------------------------------------------------------------------------------------------------------------------------------------
+BORRA MENSAJES 
+
+docker exec <Container-ID> kafka-delete-records.sh --bootstrap-server localhost:9092 --topic <Topic> --offset-end 1 --force
+------------------------------------------------------------------------------------------------------------------------------------
