@@ -1,0 +1,12 @@
+//Esta es para crear el jar sin que ejecute los test. Si cambiamos el puerto
+//e intentamos ejecutarlos nos da error
+mvn clean package -DskipTests  
+
+docker build -t block7-crud-validation:v2 .
+
+//container de posgre con los parametros y el volumen de mi maquina local donde se van a guardar los datos
+docker run --name postgres-block7 --network block7-spring -v /Users/juanjose.garcia/Postgres-databases:/var/lib/postgresql/data -e POSTGRES_PASSWORD=root -e POSTGRES_USER=postgres -e POSTGRES_DB=crud_validation -p 5432:5432 -d postgres
+
+
+//aqui en el .properties le indico que puedo tener variables de entorno como DB_PASSWORD y otras que creo yo como DB_URL o DB_USERNAME
+docker run --name spring-crud-validation --network block7-spring -p 8080:8080 -e DB_PASSWORD=root -d block7-crud-validation:v1
