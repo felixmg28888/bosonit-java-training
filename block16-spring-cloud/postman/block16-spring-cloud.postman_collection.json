@@ -1,0 +1,929 @@
+{
+	"info": {
+		"_postman_id": "99318f1b-d9e1-4b35-b71e-a7fc0018af96",
+		"name": "block16-spring-cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "block16-01-spring-app-viaje-cliente",
+			"item": [
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "POST 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Cliente9\",\r\n  \"apellidos\": \"Cliente9 Cliente9\",\r\n  \"edad\": 30,\r\n  \"email\": \"Cliente9@mail.com\",\r\n  \"telefono\": \"+34XXXXXXXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/cliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Cliente10\",\r\n  \"apellidos\": \"Cliente10 Cliente10\",\r\n  \"edad\": 30,\r\n  \"email\": \"Cliente10@mail.com\",\r\n  \"telefono\": \"+34XXXXXXXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/cliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/cliente/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/cliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Cliente1 Update\",\r\n  \"apellidos\": \"Cliente1 Cliente1 Update\",\r\n  \"edad\": 30,\r\n  \"email\": \"Cliente1@mail.com\",\r\n  \"telefono\": \"+34XXXXXXXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/cliente/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/cliente/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Viaje",
+					"item": [
+						{
+							"name": "POST 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen3\",\r\n  \"destination\": \"Destino3\",\r\n  \"departureDate\": \"XX-XX-XXXX XXH:XXM\",\r\n  \"arrivalDate\": \"XX-XX-XXXX XXH:XXM\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen4\",\r\n  \"destination\": \"Destino4\",\r\n  \"departureDate\": \"XX-XX-XXXX XXH:XXM\",\r\n  \"arrivalDate\": \"XX-XX-XXXX XXH:XXM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen1 Update\",\r\n  \"destination\": \"Destino1 Update\",\r\n  \"departureDate\": \"XX-XX-XXXX\",\r\n  \"arrivalDate\": \"XX-XX-XXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddPassengerToTrip 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen1\",\r\n  \"destination\": \"Destino1\",\r\n  \"departureDate\": \"XX-XX-XXXX\",\r\n  \"arrivalDate\": \"XX-XX-XXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/trip/addPassenger/1/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"addPassenger",
+										"1",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddPassengerToTrip 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen1\",\r\n  \"destination\": \"Destino1\",\r\n  \"departureDate\": \"XX-XX-XXXX\",\r\n  \"arrivalDate\": \"XX-XX-XXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/trip/addPassenger/2/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"addPassenger",
+										"2",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cuenta 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/trip/passenger/count/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"passenger",
+										"count",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateStatus 1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/trip/1/Averiado",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"1",
+										"Averiado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Verify 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/trip/verify/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"trip",
+										"verify",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "block16-02-spring-app-ticket",
+			"item": [
+				{
+					"name": "Ticket",
+					"item": [
+						{
+							"name": "POST Generate Ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/ticket/generateTicket/1/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"ticket",
+										"generateTicket",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/ticket/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"ticket",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "block16-04-api-gateway",
+			"item": [
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "POST 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Cliente9\",\r\n  \"apellidos\": \"Cliente9 Cliente9\",\r\n  \"edad\": 30,\r\n  \"email\": \"Cliente9@mail.com\",\r\n  \"telefono\": \"+34XXXXXXXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Cliente10\",\r\n  \"apellidos\": \"Cliente10 Cliente10\",\r\n  \"edad\": 30,\r\n  \"email\": \"Cliente10@mail.com\",\r\n  \"telefono\": \"+34XXXXXXXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Cliente1 Update\",\r\n  \"apellidos\": \"Cliente1 Cliente1 Update\",\r\n  \"edad\": 30,\r\n  \"email\": \"Cliente1@mail.com\",\r\n  \"telefono\": \"+34XXXXXXXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Viaje",
+					"item": [
+						{
+							"name": "POST 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen3\",\r\n  \"destination\": \"Destino3\",\r\n  \"departureDate\": \"XX-XX-XXXX XXH:XXM\",\r\n  \"arrivalDate\": \"XX-XX-XXXX XXH:XXM\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen4\",\r\n  \"destination\": \"Destino4\",\r\n  \"departureDate\": \"XX-XX-XXXX XXH:XXM\",\r\n  \"arrivalDate\": \"XX-XX-XXXX XXH:XXM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen1 Update\",\r\n  \"destination\": \"Destino1 Update\",\r\n  \"departureDate\": \"XX-XX-XXXX\",\r\n  \"arrivalDate\": \"XX-XX-XXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddPassengerToTrip 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen1\",\r\n  \"destination\": \"Destino1\",\r\n  \"departureDate\": \"XX-XX-XXXX\",\r\n  \"arrivalDate\": \"XX-XX-XXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip/addPassenger/1/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"addPassenger",
+										"1",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AddPassengerToTrip 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"origin\": \"Origen1\",\r\n  \"destination\": \"Destino1\",\r\n  \"departureDate\": \"XX-XX-XXXX\",\r\n  \"arrivalDate\": \"XX-XX-XXXX\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/trip/addPassenger/2/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"addPassenger",
+										"2",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cuenta 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/passenger/count/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"passenger",
+										"count",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateStatus 1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/1/Averiado",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"1",
+										"Averiado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Verify 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/trip/verify/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"trip",
+										"verify",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ticket",
+					"item": [
+						{
+							"name": "POST Generate Ticket",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/ticket/generateTicket/1/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ticket",
+										"generateTicket",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Ticket",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/ticket/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ticket",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
