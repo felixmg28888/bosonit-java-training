@@ -47,6 +47,10 @@
 
 > **20 -** [x] [**block15-kafka-varios**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block15-kafka-varios)  *//**Exercise 20:** Using Kafka integration with Spring Boot: creation of producers and consumers to interact with Kafka topics and implementation.*
 
+> **21 -** [x] [**block16-spring-cloud**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block16-spring-cloud)  *//**Exercise 21:** UIntroduction to Spring Cloud using Eureka Naming Server and API Gateway.*
+
+> **22 -** [x] [**block17-spring-batch**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block17-spring-batch)  *//**Exercise 22:**  Introduction to Spring Batch using steps, jobs, and listeners.*
+
 > **Extra 1 -** [x] [**ejercicio-controller**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/ejercicio-controller)  *//**Extra 1:** Creating controllers that handles all unspecified GET requests, returns a ControllerObject using filters to redirect requests based on a specified header.*
 
 > **Extra 2 -** [x] [**examen-JPA-cascade**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/examen-JPA-cascade)  *//**Extra 2:** Implementing table relationships with cascading CRUD operations for client, invoice, and invoice line entities.*
