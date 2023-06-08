@@ -43,13 +43,13 @@
 
 > **18 -** [x] [**block13-testing-crud**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block13-testing-crud)  *//**Exercise 18:** Testing CRUD using SonarQube with a requirement to achieve 70% code coverage.*
 
-> **19 -** [x] [**block14-spring-security**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block14-spring-security)  *//**Exercise 19:** mplementing Spring Security in a Spring Boot project involves adding necessary dependencies and configuring security features such as user authentication, role-based access control, and session management.*
+> **19 -** [x] [**block14-spring-security**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block14-spring-security)  *//**Exercise 19:** Implementing Spring Security in a Spring Boot project involves adding necessary dependencies and configuring security features such as user authentication, role-based access control, and session management.*
 
 > **20 -** [x] [**block15-kafka-varios**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block15-kafka-varios)  *//**Exercise 20:** Using Kafka integration with Spring Boot: creation of producers and consumers to interact with Kafka topics and implementation.*
 
-> **21 -** [x] [**block16-spring-cloud**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block16-spring-cloud)  *//**Exercise 21:** UIntroduction to Spring Cloud using Eureka Naming Server and API Gateway.*
+> **21 -** [x] [**block16-spring-cloud**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block16-spring-cloud)  *//**Exercise 21:** Implementing and configuring Spring Cloud, using Eureka Naming Server and API Gateway, to develop distributed and scalable applications.*
 
-> **22 -** [x] [**block17-spring-batch**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block17-spring-batch)  *//**Exercise 22:**  Introduction to Spring Batch using steps, jobs, and listeners.*
+> **22 -** [x] [**block17-spring-batch**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/block17-spring-batch)  *//**Exercise 22:** Introduction in Spring Batch and covers steps, jobs, and listeners, providing a foundation for efficient and scalable batch processing.*
 
 > **Extra 1 -** [x] [**ejercicio-controller**](https://github.com/felixmgdeveloper/bosonit-java-training/tree/main/ejercicio-controller)  *//**Extra 1:** Creating controllers that handles all unspecified GET requests, returns a ControllerObject using filters to redirect requests based on a specified header.*
 
