@@ -48,7 +48,7 @@
 
     List<Map> headers; Lo mismo que el campo anterior, pero para los headers mandados.
 
-    String urlOrigen. La ip desde nos han hecho la petición.
+    String urlOrigen. La ip desde done nos han hecho la petición.
     )
 <br>
 
@@ -56,6 +56,6 @@
 
     @GetMapping(value={"/salta"}) public String entryJump( ) {
 
-    return “he ido a Jump”;
+    return "he ido a Jump";
 
     }

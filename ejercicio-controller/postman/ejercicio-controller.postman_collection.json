@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "a09a0430-5f1e-473c-8707-b92db9663326",
+		"name": "ejercicio-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "GET One",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "pepe",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/one",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"one"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Aleatorio 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "pepe",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/aleatorio/aleatorio/aleatorio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aleatorio",
+						"aleatorio",
+						"aleatorio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Aleatorio 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "pepe",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/aleatorio/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aleatorio",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Aleatorio 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "nombre",
+						"value": "pepe",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080////",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"",
+						"",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ControllerObject",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ControllerObject",
+						"value": "ControllerObject",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/controllerobject/controllerobject?ControllerObject=ControllerObject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controllerobject",
+						"controllerobject"
+					],
+					"query": [
+						{
+							"key": "ControllerObject",
+							"value": "ControllerObject"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Salta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/salta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Redirige 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "REDIRIGE",
+						"value": "SALTA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/controllerobject/controllerobject?ControllerObject=ControllerObject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controllerobject",
+						"controllerobject"
+					],
+					"query": [
+						{
+							"key": "ControllerObject",
+							"value": "ControllerObject"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Redirige 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "REDIRIGE",
+						"value": "SALTA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/aleatorio/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aleatorio",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
